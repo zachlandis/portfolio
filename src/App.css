@@ -1,0 +1,212 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/*Home*/
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 15rem;
+  text-align: center;
+}
+
+.zach-headshot {
+  width: 300px; 
+  height: 300px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+}
+
+.social-logo {
+  width: 100px; 
+  height: 100px; 
+  margin: 10px;
+  border-radius: 50%; 
+  object-fit: cover; 
+}
+
+/*Navbar*/
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-link {
+  margin-right: 10px; 
+}
+
+.skill-lists {
+  display: flex;
+  text-align: left;
+  align-items: center; 
+  align-content: center;
+  justify-content: center;
+}
+
+.skill-list {
+  flex: 1; 
+  margin: 0 20px; 
+  height: 300px;
+  width: 20vw;
+  overflow-y: auto;
+  background-color: #282828;
+  border-radius: 15px;
+}
+
+.skill-list::-webkit-scrollbar, .cards-container::-webkit-scrollbar, .about-zach-card::-webkit-scrollbar {
+  width: 10px;
+}
+
+.skill-list::-webkit-scrollbar-thumb, .cards-container::-webkit-scrollbar-thumb, .about-zach-card::-webkit-scrollbar-thumb {
+  background-color: #646cffaa; 
+  border-radius: 5px;
+}
+
+.skill-list::-webkit-scrollbar-track, .cards-container::-webkit-scrollbar-track, .about-zach-card::-webkit-scrollbar-track {
+  background-color: #f0f0f0; 
+}
+
+
+h3 {
+  text-align: center;
+}
+
+.left-align {
+  text-align: left;
+}
+
+
+.cards-container{
+  height: 400px;
+  overflow-y: auto;
+}
+
+.card {
+  border: 1px solid white;
+  margin: 10px;
+  background-color: #282828;
+  border-radius: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 0;
+}
+
+.card-header {
+  display: flex;
+  background-color: #646cffaa;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.project-description {
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.github-icon {
+  width: 50px;
+  height: auto; 
+}
+
+.about-zach-card-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  align-items: flex-start; 
+  align-content: center; 
+  gap: 20px;
+  padding: 20px;
+}
+
+.about-zach-card {
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  border: 1px solid black;
+  margin: 0 5px;
+  height: 300px;
+  width: 20vw;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #282828;
+  border-radius: 15px;
+  text-align: center; 
+}
+
+.about-zach-card-top {
+  align-items: flex-start; 
+  justify-content: flex-start;
+  text-align: left;
+}
+
+
+.fun-facts-description-container {
+  display: flex;
+}
+
+.fun-facts-description {
+  padding: 10px;
+  margin: 10px;
+}
+
+.fun-facts-score-container {
+  border: 4px solid white;
+  margin: 10px;
+  padding: 10px;
+  word-wrap: normal;
+}
+
+.fun-facts-game {
+  text-align: left;
+}
+
+.answer-correct {
+  color: green;
+}
+
+.answer-incorrect {
+  color: red;
+}
