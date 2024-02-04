@@ -32,7 +32,7 @@ export default function TechnicalProjects() {
                     target="_blank"
                     ><img 
                     className='github-icon'
-                    src='./src/assets/github.png'
+                    src='/github.png'
                     />
                   </a>
                 </div>

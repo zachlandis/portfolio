@@ -8,7 +8,7 @@ function Home() {
     <div className='home'>
         <div>
             <img 
-              src='src/assets/zach.PNG'
+              src='zach.PNG'
               alt='zach-headshot'
               className='zach-headshot'
             />
@@ -20,7 +20,7 @@ function Home() {
             target="_blank"
             href='https://www.linkedin.com/in/zach-landis'>
               <img
-                src='src/assets/LI_logo.png'
+                src='/LI_logo.png'
                 alt='linkedin-logo'
                 className='social-logo'
               />
@@ -29,7 +29,7 @@ function Home() {
             target="_blank"
             href='https://github.com/zachlandis'>
               <img
-                src='src/assets/github.png'
+                src='/github.png'
                 alt='github-logo'
                 className='social-logo'
               />
