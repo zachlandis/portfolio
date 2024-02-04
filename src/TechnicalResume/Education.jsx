@@ -10,8 +10,8 @@ function Education() {
     <div>
         <h1>Education</h1>
           <div className='cards-container'>
-            {sortedEducation.map((edu) => (
-              <div className='card'>
+            {sortedEducation.map((edu, index) => (
+              <div key={index} className='card'>
                 <div className='card-header'>
                   <h2>{edu.school}</h2>
                 </div>
