@@ -22,7 +22,7 @@ export default function TechnicalProjects() {
   return (
     <div>
         <h1>Technical Projects</h1>
-          <div className='technical-project-container'>
+          <div className='cards-container'>
             {technicalProjects.map((project, index) => (
               <div key={index} className='card'>
                 <div className='card-header'>

@@ -86,16 +86,16 @@
   border-radius: 15px;
 }
 
-.skill-list::-webkit-scrollbar, .technical-project-container::-webkit-scrollbar, .about-zach-card::-webkit-scrollbar {
+.skill-list::-webkit-scrollbar, .cards-container::-webkit-scrollbar, .about-zach-card::-webkit-scrollbar {
   width: 10px;
 }
 
-.skill-list::-webkit-scrollbar-thumb, .technical-project-container::-webkit-scrollbar-thumb, .about-zach-card::-webkit-scrollbar-thumb {
+.skill-list::-webkit-scrollbar-thumb, .cards-container::-webkit-scrollbar-thumb, .about-zach-card::-webkit-scrollbar-thumb {
   background-color: #646cffaa; 
   border-radius: 5px;
 }
 
-.skill-list::-webkit-scrollbar-track, .technical-project-container::-webkit-scrollbar-track, .about-zach-card::-webkit-scrollbar-track {
+.skill-list::-webkit-scrollbar-track, .cards-container::-webkit-scrollbar-track, .about-zach-card::-webkit-scrollbar-track {
   background-color: #f0f0f0; 
 }
 
@@ -109,7 +109,7 @@ h3 {
 }
 
 
-.technical-project-container{
+.cards-container{
   height: 400px;
   overflow-y: auto;
 }
@@ -208,11 +208,7 @@ h3 {
 
 
 @media (max-width: 767px) {
-  #root {
-    padding: 1rem;
-  }
-
-  .home {
+  #root, .home, .cards-container, .about-zach-card-container {
     padding: 1rem;
   }
 
@@ -235,22 +231,18 @@ h3 {
     margin-bottom: 10px; 
   }
 
-  .skill-lists {
+  .skill-lists, .fun-facts-description-container, .fun-facts-game {
     flex-direction: column;
   }
 
   .skill-list, .card, .about-zach-card {
-    width: 100%; 
+    width: calc(100% - 2rem); 
     margin: 10px 0; 
     height: auto; 
   }
 
-  .technical-project-container, .about-zach-card-container {
+  .cards-container, .about-zach-card-container {
     height: auto;
-    width: auto;
-  }
-
-  .fun-facts-description-container, .fun-facts-game {
-    flex-direction: column; 
+    padding: 20px; 
   }
 }
