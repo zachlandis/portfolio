@@ -5,6 +5,7 @@
   text-align: center;
 }
 
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
@@ -12,14 +13,7 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
@@ -35,58 +29,61 @@
   color: #888;
 }
 
+/*Home*/
+
 .home {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 15rem;
   text-align: center;
 }
 
 .zach-headshot {
-  width: 150px; 
-  height: 150px; 
+  width: 250px; 
+  height: 250px; 
   border-radius: 50%; 
   object-fit: cover; 
 }
 
 .social-logo {
-  width: 50px; 
-  height: 50px; 
-  margin: 5px;
+  width: 100px; 
+  height: 100px; 
+  margin: ;
   border-radius: 50%; 
   object-fit: cover; 
 }
 
+/*Navbar*/
 .nav-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100vw;
 }
 
 .nav-link {
-  margin: 0 5px; 
+  margin-right: 10px; 
 }
 
 .skill-lists {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  text-align: left;
   align-items: center; 
+  align-content: center;
+  justify-content: center;
 }
 
 .skill-list {
-  margin: 0 10px; 
-  width: 90%;
-  max-width: 400px;
-  height: auto;
+  flex: 1; 
+  margin: 0 20px; 
+  height: 300px;
+  width: 20vw;
   overflow-y: auto;
   background-color: #282828;
   border-radius: 15px;
-  padding: 1rem;
 }
 
 .skill-list::-webkit-scrollbar, .cards-container::-webkit-scrollbar, .about-zach-card::-webkit-scrollbar {
@@ -102,6 +99,7 @@
   background-color: #f0f0f0; 
 }
 
+
 h3 {
   text-align: center;
 }
@@ -110,21 +108,21 @@ h3 {
   text-align: left;
 }
 
-.cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
+
+.cards-container{
+  height: 400px;
+  overflow-y: auto;
 }
 
 .card {
   border: 1px solid white;
+  margin: 10px;
   background-color: #282828;
   border-radius: 15px;
-  padding: 20px;
-  width: 90%;
-  max-width: 300px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 0;
 }
 
 .card-header {
@@ -137,7 +135,7 @@ h3 {
 }
 
 .project-description {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .github-icon {
@@ -150,6 +148,7 @@ h3 {
   flex-wrap: wrap; 
   justify-content: center; 
   align-items: flex-start; 
+  align-content: center; 
   gap: 20px;
   padding: 20px;
 }
@@ -160,9 +159,9 @@ h3 {
   align-items: center; 
   justify-content: center; 
   border: 1px solid black;
-  height: auto;
-  width: 90%;
-  max-width: 300px;
+  margin: 0 5px;
+  height: 300px;
+  width: 20vw;
   padding: 10px;
   overflow-y: auto;
   background-color: #282828;
@@ -173,7 +172,9 @@ h3 {
 .about-zach-card-top {
   align-items: flex-start; 
   justify-content: flex-start;
+  text-align: left;
 }
+
 
 .fun-facts-description-container {
   display: flex;
@@ -188,6 +189,9 @@ h3 {
   border: 4px solid white;
   margin: 10px;
   padding: 10px;
+  word-wrap: normal;
+  text-align: center;
+  justify-content: center;
 }
 
 .fun-facts-game {
@@ -200,4 +204,52 @@ h3 {
 
 .answer-incorrect {
   color: red;
+}
+
+
+@media (max-width: 767px) {
+  #root {
+    padding: 1rem;
+  }
+
+  .home {
+    padding: 1rem;
+  }
+
+  .zach-headshot {
+    width: 150px;
+    height: 150px;
+  }
+
+  .social-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .nav-container {
+    flex-direction: column;
+  }
+
+  .nav-link {
+    margin-right: 0;
+    margin-bottom: 10px; 
+  }
+
+  .skill-lists {
+    flex-direction: column;
+  }
+
+  .skill-list, .card, .about-zach-card {
+    width: 100%; 
+    margin: 10px 0; 
+    height: auto; 
+  }
+
+  .cards-container, .about-zach-card-container {
+    height: auto;
+  }
+
+  .fun-facts-description-container, .fun-facts-game {
+    flex-direction: column; 
+  }
 }
