@@ -86,16 +86,16 @@
   border-radius: 15px;
 }
 
-.skill-list::-webkit-scrollbar, .cards-container::-webkit-scrollbar, .about-zach-card::-webkit-scrollbar {
+.skill-list::-webkit-scrollbar, .technical-project-container::-webkit-scrollbar, .about-zach-card::-webkit-scrollbar {
   width: 10px;
 }
 
-.skill-list::-webkit-scrollbar-thumb, .cards-container::-webkit-scrollbar-thumb, .about-zach-card::-webkit-scrollbar-thumb {
+.skill-list::-webkit-scrollbar-thumb, .technical-project-container::-webkit-scrollbar-thumb, .about-zach-card::-webkit-scrollbar-thumb {
   background-color: #646cffaa; 
   border-radius: 5px;
 }
 
-.skill-list::-webkit-scrollbar-track, .cards-container::-webkit-scrollbar-track, .about-zach-card::-webkit-scrollbar-track {
+.skill-list::-webkit-scrollbar-track, .technical-project-container::-webkit-scrollbar-track, .about-zach-card::-webkit-scrollbar-track {
   background-color: #f0f0f0; 
 }
 
@@ -109,7 +109,7 @@ h3 {
 }
 
 
-.cards-container{
+.technical-project-container{
   height: 400px;
   overflow-y: auto;
 }
@@ -245,8 +245,9 @@ h3 {
     height: auto; 
   }
 
-  .cards-container, .about-zach-card-container {
+  .technical-project-container, .about-zach-card-container {
     height: auto;
+    width: auto;
   }
 
   .fun-facts-description-container, .fun-facts-game {
