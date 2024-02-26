@@ -3,6 +3,7 @@ export const technicalSkills = [
     "HTML",
     "CSS",
     "React",
+    "React Native",
     "Redux",
     "Ruby on Rails",
     "Python",
@@ -56,6 +57,12 @@ export const technicalProjects = [
         description: "Dinner Picker streamlines meal planning by leveraging a public API for users to customize weekly menus according to dietary preferences. This platform automates shopping lists and cooking instructions, enhancing meal preparation efficiency.",
         github: "https://github.com/zachlandis/Dinner-Picker",
         actions: "Integrated the Devise Ruby gem: Streamlined user registration and authentication processes. Leveraged Redux for state management and React for the client-side interface: Offered an engaging user experience. Developed the backend with Ruby on Rails and a Postgres database: Enabled robust user data management and personalized menu generation."
+    },
+    {
+        name: "Concert Finder",
+        description: "Discover and filter live concerts within your vicinity or chosen destination, offering detailed event insights, ticket purchasing options, and additional features to enhance your live music experience.",
+        github: "https://github.com/zachlandis/concert-finder",
+        actions:"API Integration: Integrated ticketing websites' APIs for comprehensive concert listings. Frontend Development: Built the frontend with React-Native for a seamless mobile experience. User Experience: Created an intuitive interface with smooth navigation and interactive elements. State Management: Utilized Redux for efficient state management, ensuring application performance."
     },
     {
         name: "Jam Jackpot",
